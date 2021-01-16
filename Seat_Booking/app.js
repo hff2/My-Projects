@@ -43,6 +43,12 @@ function populateUI() {
       }
     });
   }
+
+  const selectedMovieIndex = localStorage.getItem("selectedMovieIndex");
+
+  if (selectedMovieIndex !== null) {
+    movieSelect.selectedIndex = selectedMovieIndex;
+  }
 }
 
 //Movie select event
@@ -62,3 +68,6 @@ container.addEventListener("click", (e) => {
     updateSelectedCount();
   }
 });
+
+// Initial count and total set
+updateSelectedCount();
