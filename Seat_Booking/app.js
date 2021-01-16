@@ -6,12 +6,21 @@ const movieSelect = document.getElementById("movie");
 
 const ticketPrice = parseInt(movieSelect.value);
 
+//Update total and count
+function updateSelectedCount() {
+  const selectedSeats = document.querySelectorAll(".row .seat.selected");
+  // How many seats you clicked
+  const selectedSeatsCount = selectedSeats.length;
+  count.innerText = selectedSeatsCount;
+  total.innerText = selectedSeatsCount * ticketPrice;
+}
+
 container.addEventListener("click", (e) => {
   if (
     e.target.classList.contains("seat") &&
     !e.target.classList.contains("occupied")
   ) {
-    // console.log(e.target);
     e.target.classList.toggle("selected");
+    updateSelectedCount();
   }
 });
