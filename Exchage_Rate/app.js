@@ -8,7 +8,14 @@ const swap = document.getElementById("swap");
 
 //Fetch exchage rates and update the DOM
 function caclulate() {
-  console.log("RUN");
+  const currency_one = currencyEl_one.value;
+  const currency_two = currencyEl_two.value;
+
+  fetch(`https://api.exchangerate-api.com/v4/latest/${currency_one}`)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+    });
 }
 
 // Event listeners
