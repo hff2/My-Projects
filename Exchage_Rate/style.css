@@ -48,7 +48,7 @@ p {
 }
 
 .currency select {
-  padding: 10px 20px 10px 10px;
+  padding: 10px 30px 10px 10px;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -89,5 +89,8 @@ button:focus {
 @media (max-width: 600px) {
   .currency input {
     width: 200px;
+  }
+  h1 {
+    text-align: center;
   }
 }
