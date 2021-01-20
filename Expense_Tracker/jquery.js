@@ -39,8 +39,8 @@ function updateValues() {
   ).toFixed(2);
   // balance.innerText = `$${total}`;
   $("#balance").text(`$${total}`);
-  $("#money_plus").text(`$${income}`);
-  $("#money_minus").text(`$${expense}`);
+  $("#money-plus").text(`$${income}`);
+  $("#money-minus").text(`$${expense}`);
 }
 
 function addTransaction(e) {
