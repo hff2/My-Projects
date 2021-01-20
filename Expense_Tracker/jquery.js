@@ -18,7 +18,9 @@ function addTransactionDOM(transaction) {
   item.html(`${transaction.text} <span>${sign}${Math.abs(
     transaction.amount
   )}</span> 
-  <button class="delete-btn">x</button>
+  <button class="delete-btn" onclick="removeTransaction(${
+    transaction.id
+  })">x</button>
   `);
   // list.appendChild(item);
   $("#list").append(item);
@@ -43,6 +45,38 @@ function updateValues() {
   $("#money_minus").text(`$${expense}`);
 }
 
+function addTransaction(e) {
+  e.preventDefault();
+  // if (text.value.trim() === "" || amount.value.trim() === "") {
+  if ($("#text").val().trim() === "" || $("#amount").val().trim() === "") {
+    alert("Please add a text and amount");
+  } else {
+    const transaction = {
+      id: generateID(),
+      // text: text.value,
+      text: $("#text").val(),
+      // amount: +amount.value,
+      amount: +$("#amount").val(),
+    };
+    transactions.push(transaction);
+    addTransactionDOM(transaction);
+    updateValues();
+
+    // text.value = "";
+    $("#text").val("");
+    $("#amount").val("");
+  }
+}
+
+function generateID() {
+  return Math.floor(Math.random() * 100000000);
+}
+
+function removeTransaction(id) {
+  transactions = transactions.filter((transaction) => transaction.id !== id);
+  init();
+}
+
 //Init app
 function init() {
   // list.innerHTML = "";
@@ -52,3 +86,6 @@ function init() {
 }
 
 init();
+
+// form.addEventListener("submit", addTransaction);
+$("#form").submit(addTransaction);
