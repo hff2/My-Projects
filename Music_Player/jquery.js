@@ -40,6 +40,22 @@ function prevSong() {
   playSong();
 }
 
+$("#audio").on("timeupdate", function () {
+  const duration = $("#audio")[0].duration;
+  const currentTime = $("#audio")[0].currentTime;
+  const progressPercent = (currentTime / duration) * 100;
+  $("#progress").css("width", `${progressPercent}%`);
+});
+
+$("#progress-container").click(function (e) {
+  const duration = $("#audio")[0].duration;
+  const width = $("#progress-container").width();
+  const offsetX = $(e.target).offset().left;
+  const clickX = e.pageX;
+  const percent = (clickX - offsetX) / width;
+  $("#audio")[0].currentTime = percent * duration;
+});
+
 $("#play").click(function () {
   const isPlaying = $("#music-container").hasClass("play");
   if (isPlaying == true) {
@@ -54,5 +70,9 @@ $("#prev").click(function () {
   prevSong();
 });
 $("#next").click(function () {
+  nextSong();
+});
+
+$("audio").on("ended", function () {
   nextSong();
 });
