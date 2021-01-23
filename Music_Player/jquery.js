@@ -50,10 +50,9 @@ $("#audio").on("timeupdate", function () {
 $("#progress-container").click(function (e) {
   const duration = $("#audio")[0].duration;
   const width = $("#progress-container").width();
-  const offsetX = $(e.target).offset().left;
-  const clickX = e.pageX;
-  const percent = (clickX - offsetX) / width;
-  $("#audio")[0].currentTime = percent * duration;
+  const clickX = e.offsetX;
+  const percent = (clickX / width) * duration;
+  $("#audio")[0].currentTime = percent;
 });
 
 $("#play").click(function () {
