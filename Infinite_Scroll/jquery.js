@@ -23,3 +23,20 @@ function showPosts() {
 }
 
 showPosts();
+
+function showLoading() {
+  $(".loader").addClass("show");
+  setTimeout(() => {
+    $(".loader").removeClass("show");
+    setTimeout(() => {
+      page++;
+      showPosts();
+    }, 300);
+  }, 1000);
+}
+
+$(window).scroll(function () {
+  if ($(document).scrollTop() + $(window).height() > $(document).height() - 5) {
+    showLoading();
+  }
+});
