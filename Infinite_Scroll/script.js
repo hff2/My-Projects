@@ -76,3 +76,5 @@ window.addEventListener("scroll", () => {
     showLoading();
   }
 });
+
+filter.addEventListener("input", filterPosts);
