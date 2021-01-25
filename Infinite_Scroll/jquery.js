@@ -22,6 +22,16 @@ function showPosts() {
   });
 }
 
+function filterPosts() {
+  const term = $("input").val().toLowerCase();
+  $(".post").css("display", "none");
+  $(`.post:contains('${term}')`).css("display", "flex");
+}
+
+$("input").on("input", function () {
+  filterPosts();
+});
+
 showPosts();
 
 function showLoading() {
