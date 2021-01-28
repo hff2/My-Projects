@@ -1,6 +1,17 @@
 let score = 0;
 let time = 10;
 
+let difficulty =
+  localStorage.getItem("difficulty") !== null
+    ? localStorage.getItem("difficulty")
+    : "medium";
+
+$("#difficulty").val(
+  localStorage.getItem("difficulty") !== null
+    ? localStorage.getItem("difficulty")
+    : "medium"
+);
+
 const timeInterval = setInterval(updateTime, 1000);
 
 function getRandomWord() {
@@ -60,3 +71,12 @@ function gameOver() {
 
   endgameEl.css("display", "flex");
 }
+
+$("#settings-btn").on("click", function () {
+  $("#settings").toggleClass("hide");
+});
+
+$("#settings-form").on("click", function () {
+  difficulty = $("#difficulty").val();
+  localStorage.setItem("difficulty", difficulty);
+});
