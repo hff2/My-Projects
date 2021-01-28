@@ -12,4 +12,19 @@ function getRandomWord() {
   });
 }
 
+function updateScore() {
+  score++;
+  $("#score").html(score);
+}
+
 getRandomWord();
+
+$("#text").on("input", function () {
+  const insertedText = $(this).val();
+  const randomWord = $("#word").text();
+  if (insertedText === randomWord) {
+    updateScore();
+    getRandomWord();
+    $(this).val("");
+  }
+});
