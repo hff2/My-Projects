@@ -13,9 +13,14 @@ let recognition = new window.SpeechRecognition();
 recognition.start();
 
 function onSpeak(e) {
-  console.log(e);
   const msg = e.results[0][0].transcript;
-  console.log(msg);
+  writeMessage(msg);
 }
 
+function writeMessage(msg) {
+  $("#msg").html(`
+    <div>You said: </div>
+    <span class="box">${msg}</span>
+  `);
+}
 recognition.addEventListener("result", onSpeak);
