@@ -8,5 +8,8 @@
 | 04  | Expense Tracker| [Demo](https://hff2.github.io/My-Projects/Expense_Tracker/index.html) |
 | 05  | Music Player| [Demo](https://hff2.github.io/My-Projects/Music_Player/index.html) |
 | 06  | Infinite Scroll Posts| [Demo](https://hff2.github.io/My-Projects/Infinite_Scroll/index.html) |
+| 07  | Typing Game| [Demo](https://hff2.github.io/My-Projects/Typing_Game/index.html) |
+| 08  | Speak Number Guessing Game| [Demo](https://hff2.github.io/My-Projects/Speak_Number_Guessing/index.html) |
+| 09  | New Year Countdown| [Demo](https://hff2.github.io/My-Projects/New_Year_Countdown/index.html) |
 
 
