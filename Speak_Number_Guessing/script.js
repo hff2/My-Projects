@@ -12,9 +12,16 @@ recognition.start();
 
 // Capture user speak
 function onSpeak(e) {
-  console.log(e);
   const msg = e.results[0][0].transcript;
-  console.log(msg);
+  writeMessage(msg);
+}
+
+// Write what user speaks
+function writeMessage(msg) {
+  msgEl.innerHTML = `
+    <div>You said: </div>
+    <span class="box">${msg}</span>
+  `;
 }
 
 // Generate random number
