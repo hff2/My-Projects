@@ -18,7 +18,33 @@ $(document).ready(function () {
         obj.company = user.company || "no data";
         obj.location = user.location || "no data";
         obj.blog = user.blog || "no data";
-        console.log(obj);
+        // console.log(obj);
+        var profile = `
+        <div class="card card-body mb-3">
+        <div class="row">
+            <div class="col-md-3">
+              <img class="img-fluid mb-2" src="${obj.avatar_url}">
+              <a href="${user.html_url}" target="_blank" class="btn btn-primary btn-block mb-4">View Profile</a>
+            </div>
+            <div class="col-md-9">
+              <span class="badge badge-primary">Public Repos: ${obj.public_repos}</span>
+              <span class="badge badge-secondary">Public Gists: ${obj.public_gists}</span>
+              <span class="badge badge-success">Followers: ${obj.followers}</span>
+              <span class="badge badge-info">Following: ${obj.following}</span>
+              <br><br>
+              <ul class="list-group">
+                  <li class="list-group-item">Company: ${obj.company}</li>
+                  <li class="list-group-item">Website/Blog: ${obj.blog}</li>
+                  <li class="list-group-item">Location: ${obj.location}</li>
+                  <li class="list-group-item">Member Since: ${user.created_at}</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <h3 class="page-heading mb-3">Latest Repos</h3>
+      <div id="repos"></div>
+      `;
+        $("#profile").html(profile);
       },
     });
   });
