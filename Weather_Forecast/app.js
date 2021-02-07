@@ -24,8 +24,10 @@ function showWeatherInfo(data, areaIndex) {
     area[areaIndex].weatherElement[5].time[0].elementValue[0].value;
   let areaTempL =
     area[areaIndex].weatherElement[11].time[0].elementValue[0].value;
+  let areaIcon = setIcon(areaDesc);
   $("#new_area").html(`
   <div class="now_weather">
+  <div class="showIcons">${areaIcon}</div>
     <h2>現在天氣</h2>
     <h3>${areaDesc}</h3>
     <p>均溫: ${areaTemp} °C</p>
@@ -47,14 +49,47 @@ function showWeatherInfo(data, areaIndex) {
       area[areaIndex].weatherElement[5].time[timeIndex].elementValue[0].value;
     let FutureTempL =
       area[areaIndex].weatherElement[11].time[timeIndex].elementValue[0].value;
+    let icon = setIcon(FutureDesc);
     $("#future_weather").append(`
     <div class="eachInfo">
       <h1>${FutureTimeSubstr}</h1>
+      <div class="showIcons">${icon}</div>
       <h3>${FutureDesc}</h3>
       <p>均溫: ${FutureTemp} °C</p>
       <p>${FutureTempL}°C / ${FutureTempH}°C</p>
     </div> 
   `);
+  }
+}
+
+function setIcon(WeatherInfo) {
+  if (WeatherInfo == "晴時多雲" || WeatherInfo == "多雲時晴") {
+    return "<img src='img/cloudy.svg'>";
+  } else if (
+    WeatherInfo == "多雲短暫雨" ||
+    WeatherInfo == "陰時多雲短暫雨" ||
+    WeatherInfo == "陰短暫雨" ||
+    WeatherInfo == "多雲短暫陣雨" ||
+    WeatherInfo == "陰短暫陣雨"
+  ) {
+    return "<img src='img/rainy.svg'>";
+  } else if (
+    WeatherInfo == "多雲時陰" ||
+    WeatherInfo == "多雲" ||
+    WeatherInfo == "陰時多雲" ||
+    WeatherInfo == "多雲時陰短暫雨" ||
+    WeatherInfo == "多雲時陰短暫陣雨" ||
+    WeatherInfo == "陰天" ||
+    WeatherInfo == "陰時多雲短暫陣雨"
+  ) {
+    return "<img src='img/cloud.svg'>";
+  } else if (
+    WeatherInfo == "多雲短暫陣雨或雷雨" ||
+    WeatherInfo == "陰短暫陣雨或雷雨" ||
+    WeatherInfo == "陰時多雲短暫陣雨或雷雨" ||
+    WeatherInfo == "多雲時陰短暫陣雨或雷雨"
+  ) {
+    return "<img src='img/thunder.svg'>";
   }
 }
 
