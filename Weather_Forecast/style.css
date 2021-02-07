@@ -160,3 +160,37 @@ img {
 .areaSelect:hover:before {
   background: #ebebeb;
 }
+
+@media screen and (min-width: 1300px) {
+  img {
+    height: 15rem;
+    width: 15rem;
+    margin: 3rem;
+  }
+  .eachInfo h1 {
+    font-size: 4rem;
+  }
+  .eachInfo h3 {
+    font-size: 2.3rem;
+  }
+  .eachInfo p {
+    font-size: 2.3rem;
+  }
+  .eachInfo {
+    width: 25rem;
+  }
+  .now_weather {
+    width: 25rem;
+    margin-bottom: 4rem;
+  }
+  .now_weather p {
+    font-size: 2.3rem;
+  }
+  .now_weather h2 {
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+  }
+  .header h1 {
+    font-size: 5rem;
+  }
+}
