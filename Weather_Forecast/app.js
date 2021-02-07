@@ -1,0 +1,10 @@
+const api = `https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-071?Authorization=CWB-9374D590-DA77-47DF-B677-81B70B7016E6`;
+$.ajax({
+  url: api,
+  method: "GET",
+  dataType: "json",
+  success: function (res) {
+    data = res.records.locations[0];
+    console.log(res);
+  },
+});
