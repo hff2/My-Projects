@@ -5,6 +5,16 @@ $.ajax({
   dataType: "json",
   success: function (res) {
     data = res.records.locations[0];
-    console.log(res);
   },
+});
+
+function selectArea(data, areaIndex) {
+  let area = data.location;
+  let areaName = area[areaIndex].locationName;
+  $(".header").html(`<h1>${areaName}</h1>`);
+}
+
+areaSelect.addEventListener("change", (e) => {
+  areaIndex = e.target.value;
+  selectArea(data, areaIndex);
 });
