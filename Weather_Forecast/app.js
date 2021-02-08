@@ -93,7 +93,7 @@ function setIcon(WeatherInfo) {
   }
 }
 
-areaSelect.addEventListener("change", (e) => {
+$(".areaSelect").on("change", (e) => {
   areaIndex = e.target.value;
   showWeatherInfo(data, areaIndex);
   selectArea(data, areaIndex);

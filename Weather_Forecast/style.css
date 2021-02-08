@@ -132,7 +132,6 @@ img {
   font-size: 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   appearance: none;
-  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   outline: none;
@@ -171,7 +170,7 @@ img {
     font-size: 4rem;
   }
   .eachInfo h3 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
   .eachInfo p {
     font-size: 2.3rem;
