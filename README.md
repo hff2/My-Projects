@@ -1,7 +1,7 @@
 # My Projects
 
 |  #  |    Project     |                                 Demo                                 |
-| :-: | :------------: | :------------------------------------------------------------------: |
+| :-: | :------------ | :------------------------------------------------------------------: |
 | 01  | Form Validator | [Demo](https://hff2.github.io/My-Projects/Form_Validator/index.html) |
 | 02  | Movie Seat Booking | [Demo](https://hff2.github.io/My-Projects/Seat_Booking/index.html) |
 | 03  | Exchange Rate Calculator| [Demo](https://hff2.github.io/My-Projects/Exchage_Rate/index.html) |
@@ -11,5 +11,8 @@
 | 07  | Typing Game| [Demo](https://hff2.github.io/My-Projects/Typing_Game/index.html) |
 | 08  | Speak Number Guessing Game| [Demo](https://hff2.github.io/My-Projects/Speak_Number_Guessing/index.html) |
 | 09  | New Year Countdown| [Demo](https://hff2.github.io/My-Projects/New_Year_Countdown/index.html) |
+| 10  | Github Finder| [Demo](https://hff2.github.io/My-Projects/Github_Finder/index.html) |
+| 11  | Weather Forecast | [Demo](https://hff2.github.io/My-Projects/Weather_Forecast/index.html) |
+
 
 
