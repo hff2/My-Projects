@@ -63,6 +63,19 @@ function search() {
 
       // Log Data
       console.log(data);
+
+      $.each(data.items, function (i, item) {
+        // Get Ouput
+        var output = getOutput(item);
+
+        // Display Result
+        $("#results").append(output);
+      });
+
+      var buttons = getButtons(prevPageToken, nextPageToken);
+
+      // Display Buttons
+      $("#buttons").append(buttons);
     }
   );
 }
