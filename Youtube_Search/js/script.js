@@ -40,3 +40,29 @@ $(document).ready(function () {
     e.preventDefault();
   });
 });
+
+function search() {
+  // Clear Result
+  $("#result").html("");
+  $("#buttons").html("");
+
+  // Get Form Inupt
+  q = $("#query").val();
+
+  $.get(
+    "https://www.googleapis.com/youtube/v3/search",
+    {
+      part: "snippet,id",
+      q: q,
+      type: "video",
+      key: "AIzaSyDUQUDfpg_6iA_ycnD5yaAYLSPc495aa8w",
+    },
+    function (data) {
+      var nextPageToken = data.nextPageToken;
+      var prevPageToken = data.prevPageToken;
+
+      // Log Data
+      console.log(data);
+    }
+  );
+}
