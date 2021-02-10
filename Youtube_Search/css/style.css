@@ -104,3 +104,39 @@ footer {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   outline: none;
 }
+
+.search-form {
+  margin-bottom: 2rem;
+}
+
+#results li {
+  padding: 10px 0;
+  border-bottom: 1px #ccc solid;
+  list-style: none;
+  overflow: auto;
+}
+
+.list-left {
+  float: left;
+  width: 20%;
+}
+
+.list-left img {
+  width: 100%;
+  padding: 3px;
+  border: solid #ccc 2px;
+}
+
+.list-right {
+  float: right;
+  width: 78%;
+}
+
+.list-right h3 {
+  padding: 0.8rem 0px;
+  line-height: 2rem;
+}
+
+.cTitle {
+  color: #dd2826;
+}
