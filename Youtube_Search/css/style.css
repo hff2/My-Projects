@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Segoue", "sans-serif";
+  line-height: 1.6rem;
+  color: #666;
+  background: #e1e1e1 url(../img/creampaper.png);
+  font-size: 1.4rem;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  width: 740px;
+  background: #fff;
+  margin: auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+header {
+  padding: 2rem 2rem;
+  background: #f4f4f4;
+}
+
+header h1 {
+  color: #000;
+  margin-bottom: 1.3rem;
+  font-size: 3rem;
+}
+
+header span {
+  color: #dd2826;
+}
+
+header p {
+  margin-top: 1rem;
+}
+
+section {
+  padding: 3rem 2rem 2rem 2rem;
+}
+
+footer {
+  padding: 2rem;
+  background: #f4f4f4;
+  text-align: center;
+}
