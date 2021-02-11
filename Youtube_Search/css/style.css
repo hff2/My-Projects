@@ -96,7 +96,7 @@ footer {
   padding-right: 43px;
   background: #fff;
   color: #ccc;
-  border: 1px solid #c8c8c8;
+  border: 2px solid #c8c8c8;
   font-size: 1.3em;
   border-bottom-color: #d2e2e7;
   border-radius: 2rem;
@@ -142,12 +142,14 @@ footer {
 }
 
 .paging-button {
-  padding: 0.8rem;
+  margin: 0px 10px;
+  padding: 1rem;
   border-radius: 20px;
   cursor: pointer;
   outline: none;
   background: white;
   border: 2px solid rgb(94, 94, 94);
+  transition: 0.4s;
 }
 
 .paging-button:hover {
@@ -157,4 +159,8 @@ footer {
 
 .button-container {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
