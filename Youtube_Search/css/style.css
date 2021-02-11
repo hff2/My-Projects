@@ -140,3 +140,21 @@ footer {
 .cTitle {
   color: #dd2826;
 }
+
+.paging-button {
+  padding: 0.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  background: white;
+  border: 2px solid rgb(94, 94, 94);
+}
+
+.paging-button:hover {
+  background-color: rgb(94, 94, 94);
+  color: white;
+}
+
+.button-container {
+  margin-top: 2rem;
+}
