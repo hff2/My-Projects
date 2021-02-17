@@ -1,0 +1,33 @@
+$color-dark: #262626;
+$color-black: #000;
+$color-primary: #d3ab55;
+$color-secondary: #bbb;
+$color-white: #fff;
+
+$font-dancingScript: 'Dancing Script',
+cursive;
+$font-josefinSans: 'Josefin Sans',
+sans-serif;
+$font-nunito: 'Nunito',
+sans-serif;
+
+@mixin flexLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textStyles {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $color-dark;
+}
