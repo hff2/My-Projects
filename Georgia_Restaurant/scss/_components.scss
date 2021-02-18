@@ -23,3 +23,38 @@
     text-align: center;
     @include textStyles;
 }
+
+.main-heading {
+    font-family: $font-dancingScript;
+    font-size: 100px;
+    font-weight: 300;
+    color: $color-primary;
+    margin-bottom: 40px;
+}
+
+.sub-heading {
+    font-family: $font-josefinSans;
+    font-size: 60px;
+    font-weight: 300;
+    color: $color-secondary;
+    margin-bottom: 80px;
+}
+
+.main-btn {
+    width: 170px;
+    height: 45px;
+    font-family: $font-josefinSans;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-primary;
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-dark;
+    }
+}
