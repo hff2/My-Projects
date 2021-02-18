@@ -25,6 +25,39 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); }
 
+.about-us {
+  height: 90vh;
+  display: flex;
+  align-items: center; }
+  .about-us-left {
+    width: 40%;
+    position: relative;
+    left: -200px; }
+    .about-us-left img {
+      width: 100%;
+      opacity: .7; }
+  .about-us-right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 100px;
+    box-sizing: border-box; }
+    .about-us-right .stars {
+      margin: 30px; }
+    .about-us-right .star {
+      font-size: 15px;
+      color: #d3ab55;
+      margin-left: 10px; }
+    .about-us-right .description {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 25px;
+      font-style: italic;
+      color: #bbb;
+      text-align: justify; }
+      .about-us-right .description::first-letter {
+        padding-left: 50px; }
+
 .logo {
   font-size: 70px;
   color: #d3ab55;
