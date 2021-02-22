@@ -106,10 +106,16 @@ body {
   height: 90vh;
   display: flex;
   align-items: center; }
+  @media (max-width: 900px) {
+    .about-us {
+      height: 70vh; } }
   .about-us-left {
     width: 40%;
     position: relative;
     left: -200px; }
+    @media (max-width: 1300px) {
+      .about-us-left {
+        left: -150px; } }
     .about-us-left img {
       width: 100%;
       opacity: .7; }
@@ -120,12 +126,21 @@ body {
     align-items: center;
     padding: 0 100px;
     box-sizing: border-box; }
+    @media (max-width: 1300px) {
+      .about-us-right {
+        padding: 0 50px; } }
     .about-us-right .stars {
       margin: 30px; }
+      @media (max-width: 1000px) {
+        .about-us-right .stars {
+          margin: 15px 0; } }
     .about-us-right .star {
       font-size: 15px;
       color: #d3ab55;
       margin-left: 10px; }
+      @media (max-width: 1000px) {
+        .about-us-right .star {
+          font-size: 12px; } }
     .about-us-right .description {
       font-family: "Josefin Sans", sans-serif;
       font-size: 25px;
@@ -134,6 +149,12 @@ body {
       text-align: justify; }
       .about-us-right .description::first-letter {
         padding-left: 50px; }
+      @media (max-width: 1600px) {
+        .about-us-right .description {
+          font-size: 18px; } }
+      @media (max-width: 1000px) {
+        .about-us-right .description {
+          font-size: 14px; } }
 
 .gallery .cards-wrapper {
   display: flex;
@@ -163,6 +184,9 @@ body {
       transition: color .7s; }
       .footer .social-media-link:hover {
         color: #d3ab55; }
+      @media (max-width: 1000px) {
+        .footer .social-media-link {
+          font-size: 35px; } }
   .footer-copyright-paragraph {
     font-family: "Josefin Sans", sans-serif;
     font-size: 18px;
@@ -199,9 +223,15 @@ body {
   border: 3px solid #d3ab55;
   border-radius: 50%;
   margin-right: 20px;
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 1000px) {
+    .logo {
+      font-size: 50px;
+      width: 90px;
+      height: 90px; } }
 
 .main-name {
   font-family: "Nunito", sans-serif;
@@ -210,6 +240,9 @@ body {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase; }
+  @media (max-width: 1000px) {
+    .main-name {
+      font-size: 40px; } }
 
 .sub-name {
   font-family: "Josefin Sans", sans-serif;
@@ -226,13 +259,31 @@ body {
   font-weight: 300;
   color: #d3ab55;
   margin-bottom: 40px; }
+  @media (max-width: 1600px) {
+    .main-heading {
+      font-size: 80px; } }
+  @media (max-width: 1000px) {
+    .main-heading {
+      font-size: 60px; } }
 
 .sub-heading {
   font-family: "Josefin Sans", sans-serif;
   font-size: 60px;
   font-weight: 300;
   color: #bbb;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  text-align: center; }
+  @media (max-width: 1600px) {
+    .sub-heading {
+      font-size: 50px;
+      margin-bottom: 50px; } }
+  @media (max-width: 1300px) {
+    .sub-heading {
+      font-size: 40px;
+      margin-bottom: 30px; } }
+  @media (max-width: 1000px) {
+    .sub-heading {
+      font-size: 30px; } }
 
 .main-btn {
   width: 170px;
@@ -275,6 +326,9 @@ body {
       font-weight: 300;
       letter-spacing: 2px;
       text-transform: capitalize; }
+      @media (max-width: 900px) {
+        .card-overlay-heading {
+          font-size: 35px; } }
     .card-overlay-paragraph {
       font-family: "Josefin Sans", sans-serif;
       font-size: 30px;
@@ -282,6 +336,9 @@ body {
       font-weight: 300;
       letter-spacing: 2px;
       text-transform: capitalize; }
+      @media (max-width: 900px) {
+        .card-overlay-paragraph {
+          font-size: 20px; } }
     .card-overlay-btn {
       width: 150px;
       height: 40px;
@@ -296,6 +353,11 @@ body {
       border-radius: 30px;
       outline: none;
       cursor: pointer; }
+      @media (max-width: 900px) {
+        .card-overlay-btn {
+          font-size: 12px;
+          width: 130px;
+          height: 30px; } }
   .card-img {
     object-fit: cover;
     opacity: .5; }
