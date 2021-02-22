@@ -211,6 +211,10 @@
             @media(max-width:650px) {
                 font-size: 25px;
             }
+
+            @media(max-width:500px) {
+                display: none;
+            }
         }
 
         &-paragraph {
@@ -225,6 +229,10 @@
 
             @media(max-width:650px) {
                 font-size: 15px;
+            }
+
+            @media(max-width:500px) {
+                display: none;
             }
         }
 
