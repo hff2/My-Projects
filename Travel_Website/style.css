@@ -1,0 +1,81 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem will be 10px */
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h4,
+h5 {
+    font-size: 2.8rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Nav Section With Hero */
+
+.main-head {
+    background-color: #131c17;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+nav {
+    /* min-height: 10vh; */
+    display: flex;
+    /* 留下頁面兩邊的空白 */
+    width: 90%;
+    margin: auto;
+    /* 如果無min-height，nav會隨著視窗縮小bar。 */
+    padding: 2rem;
+    min-height: 10vh;
+    align-items: center;
+    /* nav bar 可以跟著視窗改變位置，不會擠在一起。 */
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#logo {
+    flex: 2 1 40rem;
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+}
