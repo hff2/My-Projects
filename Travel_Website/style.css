@@ -279,6 +279,40 @@ nav ul {
     padding: 1rem 3rem;
 }
 
+/* footer */
+
+footer {
+    color: white;
+    background-color: rgb(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+
+footer h5 {
+    flex: 1 1 40rem;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Keyboard */
+button:focus {
+    background: #2e435c;
+    outline-style: solid;
+}
 
 
 /* Media Query */
@@ -316,5 +350,17 @@ nav ul {
     .locations-head h3 {
         background: rgb(19, 28, 39, 0.6);
         -webkit-text-fill-color: white;
+    }
+
+    .form-wrapper {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer h5 {
+        padding-bottom: 3rem;
     }
 }
