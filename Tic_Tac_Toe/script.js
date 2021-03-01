@@ -85,4 +85,12 @@ $(document).ready(function(){
 			}
 		}
 	});
+		// Reset Handler
+		$("#reset").click(function(){
+		$("#board li").text("+");
+		$("#board li").removeClass('disable');
+		$("#board li").removeClass('o');
+		$("#board li").removeClass('x');
+		turns = 0;
+	});
 });
