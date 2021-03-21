@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Segoue", "sans-serif";
+  line-height: 1.6rem;
+  color: #666;
+  background: #e1e1e1 url(../img/creampaper.png);
+  font-size: 1.4rem;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  width: 740px;
+  background: #fff;
+  margin: auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+header {
+  padding: 2rem 2rem;
+  background: #f4f4f4;
+}
+
+header h1 {
+  color: #000;
+  margin-bottom: 1.3rem;
+  font-size: 3rem;
+}
+
+header span {
+  color: #dd2826;
+}
+
+header p {
+  margin-top: 1rem;
+}
+
+section {
+  padding: 3rem 2rem 2rem 2rem;
+}
+
+footer {
+  padding: 2rem;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+#seatch-form {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.fieldcontainer {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#search-btn {
+  position: absolute;
+  right: 355px;
+  top: 10px;
+  height: 32px;
+  width: 32px;
+  border: 0;
+  cursor: pointer;
+  opacity: 0.65;
+  background: transparent url(../img/search-icon.png) top left no-repeat;
+  outline: none;
+}
+
+#search-btn:hover {
+  opacity: 0.9;
+}
+
+.search-field {
+  box-sizing: border-box;
+  display: block;
+  width: 45%;
+  padding: 11px 7px;
+  padding-right: 43px;
+  background: #fff;
+  color: #ccc;
+  border: 2px solid #c8c8c8;
+  font-size: 1.3em;
+  border-bottom-color: #d2e2e7;
+  border-radius: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  outline: none;
+}
+
+.search-form {
+  margin-bottom: 2rem;
+}
+
+#results li {
+  padding: 10px 0;
+  border-bottom: 1px #ccc solid;
+  list-style: none;
+  overflow: auto;
+}
+
+.list-left {
+  float: left;
+  width: 20%;
+}
+
+.list-left img {
+  width: 100%;
+  padding: 3px;
+  border: solid #ccc 2px;
+}
+
+.list-right {
+  float: right;
+  width: 78%;
+}
+
+.list-right h3 {
+  padding: 0.8rem 0px;
+  line-height: 2rem;
+}
+
+.cTitle {
+  color: #dd2826;
+}
+
+.paging-button {
+  margin: 0px 10px;
+  padding: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  background: white;
+  border: 2px solid rgb(94, 94, 94);
+  transition: 0.4s;
+}
+
+.paging-button:hover {
+  background-color: rgb(94, 94, 94);
+  color: white;
+}
+
+.button-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

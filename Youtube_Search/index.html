@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
+      integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- fancy box -->
+    <link rel="stylesheet" href="./css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- icon -->
+    <link rel="icon" href="./img/youtube-brands.svg" />
+    <title>Youtube Search</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Search<span> Videos</span></h1>
+        <p>Search all Youtube videos</p>
+      </header>
+      <section>
+        <form
+          id="search-form"
+          class="search-form"
+          name="search-form"
+          onsubmit="return search()"
+        >
+          <div class="fieldcontainer">
+            <input
+              type="search"
+              id="query"
+              class="search-field"
+              placeholder="Search Youtube..."
+            />
+            <input type="submit" name="search-btn" id="search-btn" value="" />
+          </div>
+        </form>
+        <ul id="results"></ul>
+        <div id="buttons"></div>
+      </section>
+      <footer>
+        <p>Copyright &copy; 2021, All Right Reserved</p>
+      </footer>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/jquery.fancybox.pack.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".fancybox").fancybox();
+      });
+    </script>
+  </body>
+</html>
